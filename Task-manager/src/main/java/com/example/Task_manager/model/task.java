@@ -3,6 +3,7 @@ package com.example.Task_manager.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -25,7 +26,7 @@ public class task {
 
     private enum status;
 
-    @Cr
+    @CreatedDate
     private LocalDateTime createdAt;
 
 
